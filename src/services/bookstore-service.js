@@ -1,4 +1,5 @@
 import {Component} from 'react'
+
 import _bookImage from './book.jpg'
 
 export default class BookstoreService extends Component {
@@ -6,20 +7,26 @@ export default class BookstoreService extends Component {
         {
             id:1,
             title:'Анна Каренина',
-            author:'Лев Толстой'
+            author:'Лев Толстой',
+            price: 25,
+            coverImage:_bookImage
         },
         {
             id:2,
             title:'Автостопом по галактике',
-            author:'Дуглас Адамс'
+            author:'Дуглас Адамс',
+            price: 45,
+            coverImage:_bookImage
         },
         {
             id:3,
             title:'Американский психопат',
-            author:'Брет Истон Эллис'
+            author:'Брет Истон Эллис',
+            price: 62,
+            coverImage:_bookImage
         }
     ]
-    getAllBooks=async ()=>{
+    getAllBooks=()=>{
         return this._books
     }
     getBook=async ()=>{
